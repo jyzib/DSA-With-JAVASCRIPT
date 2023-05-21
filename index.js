@@ -217,22 +217,119 @@
 // let y = x.toString()
 // console.log(y.split(''))
 // [1,2,3,4,5]
-var subtractProductAndSum = function(n) {
-    let str = n.toString()
-    let product = 1
-    let sum = 0
-    let arr = str.split('')
-    for(let i = 0;i<arr.length;i++){
-        product *= arr[i] 
-        sum = sum + Number(arr[i])
-        // console.log(i)
-    }
-    return product - sum
+// var subtractProductAndSum = function(n) {
+//     let str = n.toString()
+//     let product = 1
+//     let sum = 0
+//     let arr = str.split('')
+//     for(let i = 0;i<arr.length;i++){
+//         product *= arr[i] 
+//         sum = sum + Number(arr[i])
+//         // console.log(i)
+//     }
+//     return product - sum
    
-};
-// console.log(subtractProductAndSum(4421))
-let x = 234
-console.log(x%10 +Math.floor(x/10)%10 )
+// };
+// // console.log(subtractProductAndSum(4421))
+// let x = 234
+// console.log(x%10 +Math.floor(x/10)%10 )
+// function atta(n){
+
+
+
+// let sum = 0
+// let product =1
+
+// while(n!=0){
+//    let x = n%10
+//    sum += x
+//    product *= x
+//    n = Math.floor(n / 10) 
+// }
+// return product - sum
+// }
+
+// console.log(atta(234))
+ 
+// function triangle(n){
+
+//    for(let i = 1;i<n;i++){
+
+   
+//    let pattern = ''
+//    for(let j = 1;j<=n-i+1;j++){
+//       pattern += " "
+//    }
+//    for(let j = 1;j<i;j++){
+//       pattern += "*"
+//    }
+//    for(let j = 1;j<=i;j++){
+//       pattern += "*"
+//    }
+//    console.log(pattern)
+// }
+//    for(let i = 1;i<=n;i++){
+
+   
+//    let pattern = ''
+//    for(let j = 1;j<=i;j++){
+//       pattern += " "
+//    }
+//    for(let j = 1;j<n-i+1;j++){
+//       pattern += "*"
+//    }
+//    for(let j = 1;j<=n-i+1;j++){
+//       pattern += "*"
+//    }
+//    console.log(pattern)
+// }
+   
+// }
+// triangle(4)
+function dimpnd(n){
+   for(let i = 1; i<=n;i++){
+      let patern = ''
+      for(let j = i;j<=n;j++){
+         patern += "*"
+
+      }
+      for(let j = 1;j<i;j++){
+         patern += " "
+      }
+      for(let j = 1;j<=i;j++){
+         patern += " "
+      }
+      for(let j = i;j<=n;j++){
+         patern += "*"
+
+      }
+     console.log(patern)
+   }
+   for(let i = 1; i<=n;i++){
+      let patern = ''
+      for(let j = 1;j<=i;j++){
+         patern += "*"
+
+      }
+      for(let j = 1;j<n-i+1;j++){
+         patern += " "
+      }
+      for(let j = 1;j<=n-i+1;j++){
+         patern += " "
+      }
+      for(let j = 1;j<=i;j++){
+         patern += "*"
+
+      }
+     console.log(patern)
+   }
+}
+
+dimpnd(4)
+
+
+
+
 
 
 
