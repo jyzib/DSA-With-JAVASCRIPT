@@ -286,46 +286,184 @@
    
 // }
 // triangle(4)
-function dimpnd(n){
-   for(let i = 1; i<=n;i++){
-      let patern = ''
-      for(let j = i;j<=n;j++){
-         patern += "*"
+// function dimpnd(n){
+//    for(let i = 1; i<=n;i++){
+//       let patern = ''
+//       for(let j = i;j<=n;j++){
+//          patern += "*"
 
-      }
-      for(let j = 1;j<i;j++){
-         patern += " "
-      }
-      for(let j = 1;j<=i;j++){
-         patern += " "
-      }
-      for(let j = i;j<=n;j++){
-         patern += "*"
+//       }
+//       for(let j = 1;j<i;j++){
+//          patern += " "
+//       }
+//       for(let j = 1;j<=i;j++){
+//          patern += " "
+//       }
+//       for(let j = i;j<=n;j++){
+//          patern += "*"
 
-      }
-     console.log(patern)
-   }
-   for(let i = 1; i<=n;i++){
-      let patern = ''
-      for(let j = 1;j<=i;j++){
-         patern += "*"
+//       }
+//      console.log(patern)
+//    }
+//    for(let i = 1; i<=n;i++){
+//       let patern = ''
+//       for(let j = 1;j<=i;j++){
+//          patern += "*"
 
-      }
-      for(let j = 1;j<n-i+1;j++){
-         patern += " "
-      }
-      for(let j = 1;j<=n-i+1;j++){
-         patern += " "
-      }
-      for(let j = 1;j<=i;j++){
-         patern += "*"
+//       }
+//       for(let j = 1;j<n-i+1;j++){
+//          patern += " "
+//       }
+//       for(let j = 1;j<=n-i+1;j++){
+//          patern += " "
+//       }
+//       for(let j = 1;j<=i;j++){
+//          patern += "*"
 
-      }
-     console.log(patern)
-   }
+//       }
+//      console.log(patern)
+//    }
+// }
+
+// dimpnd(4)
+// function findtotal(n){
+//    let sum = 0
+//    let product = 1
+//    while(n!=0){
+//       let x = n%10
+//       sum += x 
+//       product *= x
+//       n = Math.floor(n/10)
+//    }
+//  console.log(sum)
+//  console.log(product)
+//  return product - sum
+
+// }
+// console.log(findtotal(234))
+// let n = 232
+// let x = n%10
+// console.log(x)
+// function decimal(n){
+//    let arr = []
+//    while(n!=0){
+//       let x = Math.floor(n/2)
+//       let rem = n%2
+//       arr.push(rem)
+//       n = x
+
+//    }
+//    console.log(arr.reverse())
+
+// }
+
+// decimal(9)
+// let arr = [1,2,3,4,5,6,1]
+// for(let i = 0;i<=Math.floor(arr.length / 2);i++){
+//      let o = arr[i]
+//      arr[i] =   arr[arr.length - 1 - i]
+//      arr[arr.length - 1-i] = o
+   
+// }
+// console.log(arr)
+// function binary(x){
+//    let arr = []
+//    while(x!=0){
+//       let rem = x%2
+//       arr.push(rem)
+//       x = Math.floor( x/2)
+//    }
+//    for(let i = 0;i<= arr.length/2 ;i++){
+//       let temp = arr[i]
+//       arr[i] = arr[arr.length-1-i]
+//       arr[arr.length-1-i] = temp
+//    }
+//  console.log(arr.join(''))
+// }
+// binary(128)
+// let arr = [1,2,3,4,5,6]
+// for(let i = 0;i<=arr.length;i++)[
+//    console.log(arr[arr.length-1-i])
+// ]
+
+// var reverse = function (x) {
+//    let ans = 0
+//     while(x!= 0){
+//       let y = x%10
+//      ans = (ans*10)+y
+//       x = Math.floor(x/10)
+
+//     }
+//  return ans
+
+// };
+
+
+// reverse(1212300)
+
+
+
+// let arr = [1,7,5,1]
+// for(let i = 0;i<arr.length - 1;i+=2){
+//     let temp  = arr[i]
+//     arr[i] = arr[i+1]
+//     arr[i+1] = temp
+//     console.log('hi')
+// }
+
+// let ans = 0 \
+function findduplicate(arr){
+let dupnicate = []
+  for(let i = 0;i<=arr.length ; i++){
+     for(let j = i + 1;j<arr.length;j++){
+        if(arr[i] === arr[j]){
+          console.log(arr[i])
+          dupnicate.push(arr[j])
+
+        
+        }
+        // console.log(arr[j])
+     }
+  }
+  console.log(dupnicate)
 }
 
-dimpnd(4)
+let arr = [4,3,2,7,8,2,3,1]
+console.log(findduplicate(arr))
+
+// let fruits = new Set();
+// fruits.add('apple');
+// fruits.add('banana');
+// fruits.add('orange');
+
+// console.log(fruits); // Output: Set { 'apple', 'banana', 'orange' }
+
+// function findDuplicate(arr){
+//   let newvalue = new Set();
+//   for(let i = 0 ; i < arr.length; i++){
+//       if(newvalue.has(arr[i])){
+//         return arr[i]
+//       }
+//       newvalue.add(arr[i])
+//   }
+
+// }
+// let arr = [1,2,3,4,5,3]
+// console.log(arr[u])
+
+// function findDuplicate(arr) {
+//   let seenElements = new Set();
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (seenElements.has(arr[i])) {
+//       return arr[i];
+//     }
+//     seenElements.add(arr[i]);
+//   }
+// }
+
+// let arr = [8, 2, 2, 4, 2, 5];
+// console.log(findDuplicate(arr));
 
 
 
@@ -338,3 +476,44 @@ dimpnd(4)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let n = 00000000000000000000000010000000
+// let arr = n.toString()
+// console.log(n)
