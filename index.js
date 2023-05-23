@@ -412,24 +412,22 @@
 // }
 
 // let ans = 0 \
-function findduplicate(arr){
-let dupnicate = []
-  for(let i = 0;i<=arr.length ; i++){
-     for(let j = i + 1;j<arr.length;j++){
-        if(arr[i] === arr[j]){
-          console.log(arr[i])
-          dupnicate.push(arr[j])
+// function findduplicate(arr){
+// let dupnicate = []
+//   for(let i = 0;i<=arr.length ; i++){
+//      for(let j = i + 1;j<arr.length;j++){
+//         if(arr[i] === arr[j]){
+//           console.log(arr[i])
+//           dupnicate.push(arr[j])
+//         }
+       
+//      }
+//   }
+//   console.log(dupnicate)
+// }
 
-        
-        }
-        // console.log(arr[j])
-     }
-  }
-  console.log(dupnicate)
-}
-
-let arr = [4,3,2,7,8,2,3,1]
-console.log(findduplicate(arr))
+// let arr = [4,3,2,7,8,2,3,1]
+// console.log(findduplicate(arr))
 
 // let fruits = new Set();
 // fruits.add('apple');
@@ -465,19 +463,72 @@ console.log(findduplicate(arr))
 // let arr = [8, 2, 2, 4, 2, 5];
 // console.log(findDuplicate(arr));
 
+// function intercaction(arr1,arr2){
+//   let x = []
+//   for(let i = 0;i<arr1.length;i++){
+//        for(let j = 0 ;j< arr2.length;j++){
+//           if(arr1[i]=== arr2[j]){
+//             x.push(arr2[j])
+//             arr2[j] = 'a'
+//             break;
+//           }
+//        }
+
+//   }
+//   console.log(x)
+
+// }
+// let arr1 = [1,2,3,3,4,5]
+// let arr2 = [2,4,2,3,1,9]
+// intercaction(arr1,arr2)
 
 
+// let sum = 5
+// let arr = [1,2,3,4,5,3,7] 
+// for(let i = 0 ; i<arr.length;i++){
+//   for(let j = i;j<arr.length;j++){
+//     if(arr[i] + arr[j] > sum){
+//       break
+//     }
+//     if(arr[i] + arr[j] == sum ){
+//       console.log(arr[i],arr[j])
+//     }
+//     // console.log(j)
+//   }
+//   // console.log(arr[i])
+// }
 
+// function pattern(n){
+//   for(let i = 0;i<n;i++){
+//     let patern = ''
+//     for(let j = i;j<n;j++){
+//       patern += '*'
 
+//     }
+//     console.log(patern)
+//   }
 
+// }
+// pattern(5)
 
+// Find the tepleat of the sum with K
 
+function findtepleat(n,r){
+      for(let i = 0;i<n.length;i++){
+         for(let j = i + 1 ; j<n.length;j++){
+           for(let k = j + 1 ;k<n.length;k++){
+            if(n[i]+n[j]+n[k] == r ){
+              console.log(n[i],n[j],n[k])
+              break
+            }
+           }
+         }
+     
 
-
-
-
-
-
+      }
+}
+let n = [1,2,3,4,5]
+findtepleat(n,9)
 
 
 
