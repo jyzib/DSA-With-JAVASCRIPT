@@ -535,27 +535,82 @@
 
 // solving this with two pointer aprouch
 
-let arr = [0,1,0,1,1,1,0,0,0,0]
-let i = 0
-let j = arr.length -1 
- while(i<j){
-  while(arr[i] == 0 && i< j ){
+// let arr = [0,1,0,1,1,1,0,0,0,0,2]
+// let i = 0
+// let j = arr.length -1 
+//  while(i<j){
+//   while(arr[i] == 0 && i< j ){
     
-    i++
-  }
-  while(arr[j]==1&& i<j){
-    j--
-  }
-  if(arr[i]==1&&arr[j]==0&&i<j){
+//     i++
+//   }
+//   while(arr[j]==1&& i<j){
+//     j--
+//   }
+//   if(arr[i]==1&&arr[j]==0&&i<j){
 
-    let temp = arr[i]
-    arr[i] = arr[j]
-    arr[j] = temp
-  }
+//     let temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = temp
+//   }
  
-}
+//   console.log(arr)
+// }
 
-console.log(arr)
+// swipe alyonate
+
+// let arr = [1,2,3,4,5,2]
+// for(let i = 0;i<arr.length;i += 2){
+ 
+// //  console.log(arr[i])
+//  console.log(arr[i+1])
+//     let temp = arr[i]
+//     arr[i] = arr[i+1]
+//     arr[i+1] = temp
+  
+// }
+// console.log(arr)
+
+
+// function uniquenumber(n){
+//   let x = 0
+//    for(let i = 0 ; i<n.length;i++){
+//    x = x^n[i]
+
+// }
+// console.log(x)
+// }
+// let arr = [1,2,3,2,3,1,4]
+// uniquenumber(arr)
+
+// let a =0 
+// let b = 9
+// console.log(a^b)
+
+
+
+
+
+
+
+
+// function findup(n){
+//   let dup = new Set()
+//   for(let i = 0;i<n.length;i++){
+//      if(dup.has(n[i])){
+//       return n[i]
+//      }
+//      dup.add(n[i])
+//   }
+
+// }
+// console.log(findup([1,6,3,4,2,7,3]))
+// let x = [1,2,3,2,1,4,3]
+// let  y = new Set(x)
+// console.log(y.has(6))
+
+
+
+
 
 
 
