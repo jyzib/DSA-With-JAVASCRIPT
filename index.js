@@ -607,10 +607,33 @@
 // let x = [1,2,3,2,1,4,3]
 // let  y = new Set(x)
 // console.log(y.has(6))
+// function arr(n){
+//  let ans = 0
+//  for(let i = 0;i<n.length; i++){
+//    ans = ans^n[i]
+//  }  
+//  for(let i = 1;i<n.length; i++){
+//    ans = ans^i
+//  }  
+// console.log(ans)
+// }
 
 
+// let x = [1,2,3,4,9,6,9]
+// arr(x)
+let arr = [7,3,2,4,2,1]
 
-
+for(let i = 0; i<arr.length;i++){
+  for(let j = i +1;j<arr.length;j++){
+     if(arr[i] > arr[j]){
+      let temp = arr[i]
+      arr[i] = arr[j]
+      arr[j] = temp
+     }
+  }
+}
+// console.log(arr.sort())
+console.log(arr)
 
 
 
