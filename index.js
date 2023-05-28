@@ -621,64 +621,244 @@
 
 // let x = [1,2,3,4,9,6,9]
 // arr(x)
-let arr = [7,3,2,4,2,1]
+// let arr = [7,3,2,4,2,1]
 
-for(let i = 0; i<arr.length;i++){
-  for(let j = i +1;j<arr.length;j++){
-     if(arr[i] > arr[j]){
-      let temp = arr[i]
-      arr[i] = arr[j]
-      arr[j] = temp
-     }
-  }
+// for(let i = 0; i<arr.length;i++){
+//   for(let j = i +1;j<arr.length;j++){
+//      if(arr[i] > arr[j]){
+//       let temp = arr[i]
+//       arr[i] = arr[j]
+//       arr[j] = temp
+//      }
+//   }
+// }
+// // console.log(arr.sort())
+// console.log(arr)
+
+
+// let arr = [1,2,3,2,4,5,3,7,8]
+// let start = 0 
+// let end = arr.length 
+// console.log(end)
+//  let mid = Math.floor((start + end/2))
+// let key = 5
+// while(start<= end){
+//   if(arr[mid] == key ){
+//     console.log(mid)
+//   }
+//   if(arr[mid]<key){
+//     start = mid + 1
+//   }
+//   else{
+//     end = mid -1
+//   }
+//   mid = (start + end )/ 2
+// }
+
+
+// let x = -1234
+
+// // console.log(  x/10)
+// let z = []
+// while(x > 0){
+//   let y = x%10 
+//   z.push(y)
+//   x = Math.floor(x/10)
+// }
+// console.log(z)
+
+// let arr = []
+// let x = [1,2,3,4]
+// let y = [...arr,{rohan:'rohan'}]
+// console.log([...y,{mohan:'mohan'}])
+// const prompt = require('prompt-sync')();
+// const x = prompt('enter value')
+// console.log(x)
+// const arr = [-5,-4,-3,-2,0,2,4,6,8]
+// let y = false
+// for(let i = 0;i<arr.length;i++){
+
+//     for(let j = i + 1 ; j<arr.length;j++){
+//       if(arr[i]+arr[j] === 0){
+//         console.log(arr[i],arr[j])
+//         y = true
+//         break;
+//       }
+//       if(y){
+//         break
+//       }
+//     }
+// }
+
+// const y = 'jazab' 
+// let x = {}
+// for(let i of y){
+//   x[i] = (x[i] || 0) +1
+//   console.log(x[i])
+//   console.log(i)
+// }
+// console.log(x)
+
+// let arr = [0,1,2,3,4,5,6,7,8,9]
+// let x = []
+// let count  = 0 
+// for(let i = 0;i<arr.length;i++){
+ 
+//    for(j = 0 ; j<arr.length;j++){
+//     for(k=0;k<arr.length;k++){
+//       for(let p = 0;p<arr.length;p++){
+//          count++
+//         console.log( [arr[i], arr[j],arr[k],arr[p]])
+//         if([arr[i], arr[j],arr[k],arr[p]]===[3,5,2,7]){
+//           break
+//         }
+//       }
+
+//     }
+   
+//    }
+// }
+
+// console.log((1,3,6,5)==(1,3,4,5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // let n = 00000000000000000000000010000000
+// // let arr = n.toString()
+// // console.log(n)
+
+// function pattern(n){
+//     for(let i = 0;i<n;i++){
+//         let pat = ''
+//         for(let j = i;j<n;j++){
+//             pat+="*"
+
+//         }
+
+//         console.log(pat)
+//     }
+// }
+// pattern(4)
+
+// const  btns = document.querySelectorAll('.btns')
+// console.log(btns)
+// const input = document.querySelector('#input')
+// const btn  = document.querySelector('#btn')
+// let x =  input.value;
+// btn.addEventListener('click',()=>{
+//    x = input.value
+// })
+// console.log(x)
+// leaner equation quation
+// const arr = [-5,-4,-3,-2,0,2,3,4,6,8]
+// let left = 0
+// let rigth = arr.length -1
+// let sum;
+// while(left < rigth){
+//       sum =  arr[left] + arr[rigth]
+//     if(sum === 0){
+//       console.log(arr[left],arr[rigth])
+//       break;
+//     }else if(sum>0){
+//       rigth--
+//     }else{
+//      left++
+//     }
+
+// }
+// console.log('ji')
+// const x = 'jaziib'
+// const p = 'azjiibl'
+// let y = {}
+// for(j of x){
+//    y[j] = (y[j]||0)+1
+//    // console.log(j)
+// }
+// for(item of p){
+//    console.log(item)
+//    if(!y[item]){
+//       console.log('false')
+//    }
+//    y[item]--
+//    console.log(true)
+// }
+// console.log(y)
+function arr(x){
+   if(x.length ===0) return 0
+   let i = 0
+   for(let j = 1;j< x.length;j++){
+      if(x[i] !== x[j]){
+         i++
+         // console.log(i,j)
+        x[i] = x[j]
+        
+         
+        
+
+
+      }
+   }
+ return i +1
 }
-// console.log(arr.sort())
-console.log(arr)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let n = 00000000000000000000000010000000
-// let arr = n.toString()
-// console.log(n)
+console.log(arr([1,2,3,3,4,4,5,6,6]))
