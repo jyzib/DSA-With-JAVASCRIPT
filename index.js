@@ -844,21 +844,97 @@
 //    console.log(true)
 // }
 // console.log(y)
-function arr(x){
-   if(x.length ===0) return 0
-   let i = 0
-   for(let j = 1;j< x.length;j++){
-      if(x[i] !== x[j]){
-         i++
-         // console.log(i,j)
-        x[i] = x[j]
+// function arr(x){
+//    if(x.length ===0) return 0
+//    let i = 0
+//    for(let j = 1;j< x.length;j++){
+//       if(x[i] !== x[j]){
+//          i++
+//          // console.log(i,j)
+//         x[i] = x[j]
         
          
         
 
 
-      }
-   }
- return i +1
+//       }
+//    }
+//  return i +1
+// }
+// console.log(arr([1,2,3,3,4,4,5,6,6]))
+
+
+
+// function pat(){
+//    for(let i = 0;i<=5;i++){
+//       let patern = ''
+
+//       for(let j= 0;j<=i;j++){
+//          patern +="*"
+         
+//       }
+//       console.log(patern)
+//    }
+// }
+// pat()
+// function forloopPattern(r,c){
+//     for(let i = 0;i<=r;i++){
+//         let patern = ''
+//         for(let j = 1;j<=r;j++){
+//         patern +="* "
+//         }
+//         console.log(patern)
+//     }
+
+// }
+// forloopPattern(3,3)
+
+// const arr = [9,1,23,2,4,5,4]
+// for(let i = 0 ; i<arr.length;i++){
+//    for(let j = i;j<arr.length;j++){
+//       if(arr[j]<arr[i]){
+//          let temp = arr[i]
+//          arr[i] = arr[j]
+//          arr[j] = temp
+//       }
+//       console.log(i,j)
+//    }
+// }
+
+// console.log(arr)
+
+// searhing algrothem
+let arr = [1,2,3,4,5,6,7,8,9]
+const find = 8
+function binarysearch(x){
+    let mid  = Math.floor(x.length / 2)
+    let start = 0
+    let end = x.length - 1
+    while(start <= end){
+        if(mid === find) return true
+
+       else if(mid<find){
+            start = mid
+            console.log(mid)
+            let xr = arr.slice(mid,arr.length)
+            binarysearch(xr)
+        }
+        
+    
+    
+    }
 }
-console.log(arr([1,2,3,3,4,4,5,6,6]))
+console.log(binarysearch(arr))
+
+
+
+
+
+
+
+
+
+
+
+
+
