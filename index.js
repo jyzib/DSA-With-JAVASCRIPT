@@ -939,32 +939,51 @@
 
 
 
-function counterTwo(init){
-    let count = init
-    function increnment(){
-       return ++count
-     }
-    function dcrenment(){
-       return --count
-     }
-    function reset(){
-        count = init
-       return count
-     }
-    return{
-        increnment : increnment,
-        decrenment : dcrenment,
-        reset : reset
-    } 
+// function counterTwo(init){
+//     let count = init
+//     function increnment(){
+//        return ++count
+//      }
+//     function dcrenment(){
+//        return --count
+//      }
+//     function reset(){
+//         count = init
+//        return count
+//      }
+//     return{
+//         increnment : increnment,
+//         decrenment : dcrenment,
+//         reset : reset
+//     } 
+// }
+
+
+// let y = counterTwo(6)
+// console.log(y.reset())
+
+// Apply Transform Over Each Element in Array
+
+// Input: arr = [1,2,3], fn = function plusone(n) { return n + 1; }
+// Output: [2,3,4]
+// Explanation:
+// const newArray = map(arr, plusone); // [2,3,4]
+// The function increases each value in the array by one. 
+
+const map = (arr)=>{
+    const result = []
+    for(let i = 0;i<arr.length;i++){
+         result.push(plusone(arr[i],i))
+      
+    }
+ return result
+
 }
+const plusone = (n,i)=> 40 + n
+let arr = [1,2,3]
 
-
-let y = counterTwo(6)
-console.log(y.reset())
-
-
-
-
+const newArray = map(arr, plusone)
+console.log(newArray)
 
 
 
