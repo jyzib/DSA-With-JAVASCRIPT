@@ -904,27 +904,78 @@
 // console.log(arr)
 
 // searhing algrothem
-let arr = [1,2,3,4,5,6,7,8,9]
-const find = 8
-function binarysearch(x){
-    let mid  = Math.floor(x.length / 2)
-    let start = 0
-    let end = x.length - 1
-    while(start <= end){
-        if(mid === find) return true
+// let arr = [1,2,3,4,5,6,7,8,9]
+// const find = 8
+// function binarysearch(x){
+    
+//     let start = 0
+//     let end = x.length - 1
+//     while(start <= end){
+//         if(mid === find) return true
+//         let mid = start 
 
-       else if(mid<find){
-            start = mid
-            console.log(mid)
-            let xr = arr.slice(mid,arr.length)
-            binarysearch(xr)
-        }
+//        else if(mid<find){
+//             start = mid
+//             console.log(mid)
+//             let xr = arr.slice(mid,arr.length)
+//             binarysearch(xr)
+//         }
         
     
     
-    }
+//     }
+// }
+// console.log(binarysearch(arr))
+// console.log('nodemon')
+
+
+
+
+
+
+
+
+// leet code 30 days challange
+
+
+
+function counterTwo(init){
+    let count = init
+    function increnment(){
+       return ++count
+     }
+    function dcrenment(){
+       return --count
+     }
+    function reset(){
+        count = init
+       return count
+     }
+    return{
+        increnment : increnment,
+        decrenment : dcrenment,
+        reset : reset
+    } 
 }
-console.log(binarysearch(arr))
+
+
+let y = counterTwo(6)
+console.log(y.reset())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
